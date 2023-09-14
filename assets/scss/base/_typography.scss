@@ -1,0 +1,78 @@
+﻿@import "../abstracts/__abstracts-dir";
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $title-font;
+  font-weight: 900;
+}
+
+h1{
+  color:$color-white;
+}
+
+p{
+  font-family: $text-font;
+  font-weight: 600;
+}
+
+
+header{
+  color:$color-white;
+}
+
+.whiteSection{
+
+  h2,h3,h4,h5,h6{
+    color:$color-title-grey;
+  }
+  
+  p{
+    color:$color-p-grey;
+  }
+}
+
+.greenSection{
+
+  h1,h2,h3,h4,h5,h6{
+    color:$color-title-green;
+  }
+
+  p{
+    color:$color-p-green;
+  }
+}
+
+.blueSection{
+
+  h1,h2,h3,h4,h5,h6{
+    color:$color-title-blue;
+  }
+
+  p{
+    color:$color-p-blue;
+  }
+}
+
+.testimonials{
+
+  .title{
+    color:$color-title-testimonial;
+  }
+  
+  .name{
+    color:$color-name-testimonial;
+  }
+  
+  .job{
+    color:$color-job-testimonial;
+  }
+
+  .text{
+    color:$color-p-testimonial;
+  }
+}
+
+footer{
+  a{
+    color:$color-footer-link;
+  }
+}
