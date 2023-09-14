@@ -369,14 +369,14 @@ nav {
   padding: 5%;
   margin-bottom: 15%;
   height: 5%; }
-  nav #c-nav-img {
+  nav #c-nav-wrap-img {
     position: relative;
     height: 100%; }
-    nav #c-nav-img img {
+    nav #c-nav-wrap-img img {
       position: absolute; }
-    nav #c-nav-img #c-nav__logo {
+    nav #c-nav-wrap-img #c-nav__logo {
       left: 1%; }
-    nav #c-nav-img #c-nav__menuIcon {
+    nav #c-nav-wrap-img #c-nav__menuIcon {
       right: 1%; }
 
 header {
@@ -384,5 +384,14 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px; }
+  header #c-headerSectionArrow {
+    position: relative;
+    height: 22%;
+    margin-top: 20%; }
+    header #c-headerSectionArrow #c-headerSectionArrow__WrapImg__arrow {
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 45%; }
 
 /*# sourceMappingURL=style.css.map */
