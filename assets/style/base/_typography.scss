@@ -7,6 +7,13 @@ h1,h2,h3,h4,h5,h6{
 
 h1{
   color:$color-white;
+  font-size:11vw;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin:0;
+  font-weight: bold;
+  letter-spacing: .5rem;
+  word-spacing: .5rem;
 }
 
 p{
