@@ -1,20 +1,40 @@
-﻿header{
-  background-image:url("../img/photo-1569201529241-f96205e2f2c6.png");
+﻿.hiddenMobile{
+  display:none;
+}
+header{
+  background-image:url("../img/orangeMobile.png");
   background-size:cover;
   background-repeat: no-repeat;
-  height:500px;
+  padding-bottom:30%;
   
   #c-headerSectionArrow{
     position:relative;
-    height:22%;
-    margin-top:20%;
+    margin-top:55%;
     
     #c-headerSectionArrow__WrapImg__arrow{
-      height: 100%;
       position: absolute;
       bottom: 0;
       left:45%;
+      height:31vw;
     
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+
+  header{
+    background-image:url("../img/orangeDesktop.png");
+    padding-bottom:18%;
+
+    #c-headerSectionArrow{
+      margin-top:15%;
+      #c-headerSectionArrow__WrapImg__arrow{
+     
+        left:48%;
+        height:8vw;
+
+      }
     }
   }
 }

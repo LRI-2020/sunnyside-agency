@@ -307,15 +307,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Fraunces", serif;
   font-weight: 900; }
 
-h1 {
+#c-headerSectionTitles__text {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
   color: #FFFFFF;
   font-size: 11vw;
   text-transform: uppercase;
-  white-space: nowrap;
   margin: 0;
-  font-weight: bold;
   letter-spacing: .5rem;
   word-spacing: .5rem; }
+  @media screen and (min-width: 769px) {
+    #c-headerSectionTitles__text {
+      font-size: 4vw; } }
 
 p {
   font-family: "Barlow", sans-serif;
@@ -379,19 +382,34 @@ nav {
     nav #c-nav-wrap-img #c-nav__menuIcon {
       right: 1%; }
 
+@media screen and (min-width: 769px) {
+  nav {
+    margin-bottom: 3%; } }
+.hiddenMobile {
+  display: none; }
+
 header {
-  background-image: url("../img/photo-1569201529241-f96205e2f2c6.png");
+  background-image: url("../img/orangeMobile.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px; }
+  padding-bottom: 30%; }
   header #c-headerSectionArrow {
     position: relative;
-    height: 22%;
-    margin-top: 20%; }
+    margin-top: 55%; }
     header #c-headerSectionArrow #c-headerSectionArrow__WrapImg__arrow {
-      height: 100%;
       position: absolute;
       bottom: 0;
-      left: 45%; }
+      left: 45%;
+      height: 31vw; }
+
+@media screen and (min-width: 769px) {
+  header {
+    background-image: url("../img/orangeDesktop.png");
+    padding-bottom: 18%; }
+    header #c-headerSectionArrow {
+      margin-top: 15%; }
+      header #c-headerSectionArrow #c-headerSectionArrow__WrapImg__arrow {
+        left: 48%;
+        height: 8vw; } }
 
 /*# sourceMappingURL=style.css.map */
