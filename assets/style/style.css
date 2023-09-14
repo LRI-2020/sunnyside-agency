@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   letter-spacing: .5rem;
   word-spacing: .5rem; }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 48em) {
     #c-headerSectionTitles__text {
       font-size: 4vw; } }
 
@@ -359,11 +359,11 @@ header {
 footer a {
   color: #458D7E; }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48em) {
   .hiddenDesktop {
     display: none; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48em) {
   .hiddenMobile {
     display: none; } }
 
@@ -393,7 +393,7 @@ nav {
     nav #c-nav-wrap-img #c-nav__menuIcon {
       right: 1%; }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48em) {
   nav {
     margin-bottom: 3%; }
 
@@ -435,7 +435,7 @@ header {
       left: 45%;
       height: 31vw; }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 48em) {
   header {
     background-image: url("../img/orangeDesktop.png");
     padding-bottom: 18%; }

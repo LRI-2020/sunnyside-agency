@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 900;
   color:$color-white;
   font-size:11vw;
-  @media screen and (min-width: 769px){
+  @media screen and (min-width: 48em){
     font-size:4vw;
   }
   text-transform: uppercase;
