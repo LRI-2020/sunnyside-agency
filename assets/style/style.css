@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,100;9..144,900&family=Open+Sans:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Open+Sans:wght@700;800&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -6,7 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,100;9..144,900&family=Open+Sans:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Open+Sans:wght@700;800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -326,6 +326,11 @@ p {
 
 header {
   color: #FFFFFF; }
+  header a {
+    display: inline-block;
+    font-family: "Barlow", sans-serif;
+    font-size: 1vw;
+    padding: 0 1rem; }
 
 .whiteSection h2, .whiteSection h3, .whiteSection h4, .whiteSection h5, .whiteSection h6 {
   color: #24303E; }
@@ -354,6 +359,18 @@ header {
 footer a {
   color: #458D7E; }
 
+@media screen and (min-width: 769px) {
+  .hiddenDesktop {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .hiddenMobile {
+    display: none; } }
+
+.center {
+  margin: auto;
+  text-align: center; }
+
 .container {
   max-width: 1400px;
   margin: 0 auto; }
@@ -361,14 +378,8 @@ footer a {
 .container > * {
   max-width: 1400px; }
 
-div, nav, section, header, footer, body {
-  border: black solid 1px; }
-
-.center {
-  margin: auto;
-  text-align: center; }
-
 nav {
+  position: relative;
   padding: 5%;
   margin-bottom: 15%;
   height: 5%; }
@@ -384,10 +395,32 @@ nav {
 
 @media screen and (min-width: 769px) {
   nav {
-    margin-bottom: 3%; } }
-.hiddenMobile {
-  display: none; }
+    margin-bottom: 3%; }
 
+  ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    right: 5%; }
+    ul li {
+      display: inline; }
+    ul #c-nav-ul-li-a__contact {
+      text-transform: uppercase;
+      color: #24303E;
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      background-color: #FFFFFF;
+      border-radius: 15%;
+      padding: 0.5rem 1rem; }
+    ul #c-nav-ul-li-a__contact:hover {
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-family: "Fraunces", serif;
+      font-weight: 700;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 15%;
+      padding: 0.5rem 1rem; } }
 header {
   background-image: url("../img/orangeMobile.png");
   background-size: cover;

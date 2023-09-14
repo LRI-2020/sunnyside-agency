@@ -1,0 +1,24 @@
+﻿.hiddenDesktop{
+  @media screen and(min-width: 769px){
+    display:none;
+  }
+}
+
+.hiddenMobile{
+  @media screen and(max-width: 768px){
+    display:none;
+  }
+
+
+}
+
+
+//div, nav, section, header, footer, body{
+//
+//  border: black solid 1px;
+//}
+
+.center{
+  margin:auto;
+  text-align:center;
+}

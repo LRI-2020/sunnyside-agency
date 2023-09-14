@@ -27,6 +27,12 @@ p{
 
 header{
   color:$color-white;
+  a{
+    display:inline-block;
+    font-family: $text-font;
+    font-size:1vw;
+    padding: 0 1rem;
+  }
 }
 
 .whiteSection{
