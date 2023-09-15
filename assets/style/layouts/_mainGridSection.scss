@@ -27,13 +27,16 @@ display:grid;
       }
   }
   
-  #c-transformSection-div__TextWrapper{
-    margin:15% 8%;
+  .mainSection-div__TextWrapper{
+    margin: 10% 8% 18% 8%;
   }
+  
   #c-transformSection-div__LearMoreRectangle{
     background-color: rgba(250, 212, 0, 0.2);
   }
-  
 
+  #c-audienceSection-div__LearMoreRectangle{
+    background-color: rgba(254, 119, 102, 0.2);
+  }
   
 }
