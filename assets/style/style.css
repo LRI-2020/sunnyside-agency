@@ -396,7 +396,7 @@ header {
   letter-spacing: 1vw; }
   @media screen and (min-width: 769px) {
     .testimonials #c-testimonialsSection-Title {
-      font-size: 2vw; } }
+      font-size: 1.5vw; } }
 .testimonials .testimonialsName__Text {
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -643,6 +643,9 @@ header {
     grid-row: 1;
     grid-column: 1/4; }
 
+  #c-testimonialsSection-Title {
+    margin: 0 20%; }
+
   .testimonialsItem {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -650,6 +653,8 @@ header {
     row-gap: 10%; }
     .testimonialsItem .testimonialsPhotos {
       width: 30%;
-      margin: 0 35%; } }
+      margin: 0 35%; }
+    .testimonialsItem #testimonialsPhotosJennie {
+      width: 28%; } }
 
 /*# sourceMappingURL=style.css.map */

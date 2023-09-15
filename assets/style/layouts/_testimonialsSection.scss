@@ -24,6 +24,10 @@
     grid-column: 1/4;
   }
 
+  #c-testimonialsSection-Title{
+    margin:0 20%;
+  }
+
   .testimonialsItem {
 
     display: grid;
@@ -32,8 +36,23 @@
     row-gap: 10%;
 
     .testimonialsPhotos {
-      width: 30%;
       margin: 0 35%;
+    }
+
+    #testimonialsPhotosThomas{
+      width: 30%;
+
+    }
+    
+
+    #testimonialsPhotosJennie{
+      width: 28%;
+
+    }
+
+    #testimonialsPhotosEmily{
+      width: 31%;
+
     }
   }
 
