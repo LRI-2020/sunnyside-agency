@@ -136,6 +136,12 @@ header {
     font-size:4.5vw;
     text-transform: uppercase;
     letter-spacing:1vw;
+    @media screen and (min-width: 769px){
+      font-size:2vw;
+
+    }
+    
+    
   }
 
   
@@ -145,6 +151,10 @@ header {
     font-weight:900;
     font-size:5vw;
     color: $color-name-testimonial;
+    @media screen and (min-width: 769px){
+      font-size:1vw;
+
+    }
   }
 
   .testimonialsJob__Text {
@@ -152,6 +162,10 @@ header {
     font-weight: 600;
     font-size:5vw;
     color: $color-job-testimonial;
+    @media screen and (min-width: 769px){
+      font-size:1vw;
+
+    }
   }
 
   .testimonialsText {
@@ -160,6 +174,10 @@ header {
     color: $color-p-testimonial;
     font-size:5vw;
     line-height: 2;
+    @media screen and (min-width: 769px){
+      font-size:1vw;
+
+    }
   }
 }
 

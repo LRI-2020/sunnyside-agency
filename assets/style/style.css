@@ -394,22 +394,34 @@ header {
   font-size: 4.5vw;
   text-transform: uppercase;
   letter-spacing: 1vw; }
+  @media screen and (min-width: 769px) {
+    .testimonials #c-testimonialsSection-Title {
+      font-size: 2vw; } }
 .testimonials .testimonialsName__Text {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 5vw;
   color: #24303E; }
+  @media screen and (min-width: 769px) {
+    .testimonials .testimonialsName__Text {
+      font-size: 1vw; } }
 .testimonials .testimonialsJob__Text {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-size: 5vw;
   color: #A7AAAD; }
+  @media screen and (min-width: 769px) {
+    .testimonials .testimonialsJob__Text {
+      font-size: 1vw; } }
 .testimonials .testimonialsText {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   color: #5B636D;
   font-size: 5vw;
   line-height: 2; }
+  @media screen and (min-width: 769px) {
+    .testimonials .testimonialsText {
+      font-size: 1vw; } }
 
 footer a {
   color: #458D7E; }
@@ -619,5 +631,26 @@ header {
   margin: 5% 4%; }
   .testimonialsItem img {
     width: 30%; }
+
+@media screen and (min-width: 769px) {
+  #c-testimonialsSectionGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 25% 75%;
+    margin: 5% 14% 15% 14%; }
+
+  #c-testimonialsSection-Wrapper__Title {
+    grid-row: 1;
+    grid-column: 1/4; }
+
+  .testimonialsItem {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    row-gap: 10%; }
+
+  img {
+    width: 30%;
+    margin: 0 35%; } }
 
 /*# sourceMappingURL=style.css.map */
