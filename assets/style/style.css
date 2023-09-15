@@ -629,7 +629,7 @@ header {
 
 .testimonialsItem {
   margin: 5% 4%; }
-  .testimonialsItem img {
+  .testimonialsItem .testimonialsPhotos {
     width: 30%; }
 
 @media screen and (min-width: 769px) {
@@ -648,9 +648,8 @@ header {
     grid-template-rows: auto auto auto;
     text-align: center;
     row-gap: 10%; }
-
-  img {
-    width: 30%;
-    margin: 0 35%; } }
+    .testimonialsItem .testimonialsPhotos {
+      width: 30%;
+      margin: 0 35%; } }
 
 /*# sourceMappingURL=style.css.map */
