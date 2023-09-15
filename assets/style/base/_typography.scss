@@ -1,94 +1,125 @@
 ﻿@import "../abstracts/__abstracts-dir";
 
-h1,h2,h3,h4,h5,h6{
+
+h1, h2, h3, h4, h5, h6 {
   font-family: $title-font;
   font-weight: 900;
 }
 
-#c-headerSectionTitles__text{
-  font-family: $title-font;
-  font-weight: 900;
-  color:$color-white;
-  font-size:11vw;
-  @media screen and (min-width: 48em){
-    font-size:4vw;
-  }
-  text-transform: uppercase;
-  margin:0;
-  letter-spacing: .5rem;
-  word-spacing: .5rem;
-}
+// Header Typo
+header {
+  color: $color-white;
 
-p{
-  font-family: $text-font;
-  font-weight: 600;
-}
-
-
-header{
-  color:$color-white;
-  a{
-    display:inline-block;
+  a {
+    display: inline-block;
     font-family: $text-font;
-    font-size:1vw;
+    font-size: 1vw;
     padding: 0 1rem;
   }
 }
 
-.whiteSection{
-
-  h2,h3,h4,h5,h6{
-    color:$color-title-grey;
+#c-headerSectionTitles__text {
+  font-family: $title-font;
+  font-weight: 900;
+  color: $color-white;
+  font-size: 11vw;
+  @media screen and (min-width: 48em) {
+    font-size: 3vw;
   }
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: .5rem;
+  word-spacing: .5rem;
+}
+
+//MainSections Typo
+
+
+@mixin mainSectionsTitle {
+  font-family: $title-font;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.whiteSection {
+
+  .whiteTitle {
+    @include mainSectionsTitle;
+    color: $color-title-grey;
+
+  }
+
+  .whiteSectionText {
+    font-family: $text-font;
+    font-weight: 600;
+    line-height: 1.7;
+    color: $color-p-grey;
+  }
+
+  .learnMoreText {
+    font-family: $title-font;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9em;
   
-  p{
-    color:$color-p-grey;
+  }
+
+}
+
+.greenSection {
+
+  .greenTitle {
+    @include mainSectionsTitle;
+    color: $color-title-green;
+
+
+  }
+
+  p {
+    color: $color-p-green;
   }
 }
 
-.greenSection{
+.blueSection {
 
-  h1,h2,h3,h4,h5,h6{
-    color:$color-title-green;
+  .blueTitle {
+    @include mainSectionsTitle;
+    color: $color-title-blue;
+
   }
 
-  p{
-    color:$color-p-green;
-  }
-}
-
-.blueSection{
-
-  h1,h2,h3,h4,h5,h6{
-    color:$color-title-blue;
-  }
-
-  p{
-    color:$color-p-blue;
+  p {
+    color: $color-p-blue;
   }
 }
 
-.testimonials{
+//Testimonials Typo
 
-  .title{
-    color:$color-title-testimonial;
-  }
-  
-  .name{
-    color:$color-name-testimonial;
-  }
-  
-  .job{
-    color:$color-job-testimonial;
+.testimonials {
+
+  .title {
+    color: $color-title-testimonial;
   }
 
-  .text{
-    color:$color-p-testimonial;
+  .name {
+    color: $color-name-testimonial;
+  }
+
+  .job {
+    color: $color-job-testimonial;
+  }
+
+  .text {
+    color: $color-p-testimonial;
   }
 }
 
-footer{
-  a{
-    color:$color-footer-link;
+//Footer Typo
+
+footer {
+  a {
+    color: $color-footer-link;
   }
 }
+
+

@@ -307,6 +307,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Fraunces", serif;
   font-weight: 900; }
 
+header {
+  color: #FFFFFF; }
+  header a {
+    display: inline-block;
+    font-family: "Barlow", sans-serif;
+    font-size: 1vw;
+    padding: 0 1rem; }
+
 #c-headerSectionTitles__text {
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -318,31 +326,36 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: .5rem; }
   @media screen and (min-width: 48em) {
     #c-headerSectionTitles__text {
-      font-size: 4vw; } }
+      font-size: 3vw; } }
 
-p {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600; }
-
-header {
-  color: #FFFFFF; }
-  header a {
-    display: inline-block;
-    font-family: "Barlow", sans-serif;
-    font-size: 1vw;
-    padding: 0 1rem; }
-
-.whiteSection h2, .whiteSection h3, .whiteSection h4, .whiteSection h5, .whiteSection h6 {
+.whiteSection .whiteTitle {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2em;
   color: #24303E; }
-.whiteSection p {
+.whiteSection .whiteSectionText {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 1.7;
   color: #808397; }
+.whiteSection .learnMoreText {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 0.9em; }
 
-.greenSection h1, .greenSection h2, .greenSection h3, .greenSection h4, .greenSection h5, .greenSection h6 {
+.greenSection .greenTitle {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2em;
   color: #24554A; }
 .greenSection p {
   color: #24554A; }
 
-.blueSection h1, .blueSection h2, .blueSection h3, .blueSection h4, .blueSection h5, .blueSection h6 {
+.blueSection .blueTitle {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2em;
   color: #052C3B; }
 .blueSection p {
   color: #19536C; }
@@ -444,5 +457,30 @@ header {
       header #c-headerSectionArrow #c-headerSectionArrow__WrapImg__arrow {
         left: 48%;
         height: 8vw; } }
+#c-mainGridSection {
+  display: grid;
+  grid-template-columns: auto; }
+  #c-mainGridSection img {
+    width: 100%; }
+  #c-mainGridSection .learnMoreWrapper {
+    width: fit-content;
+    position: relative;
+    margin-top: 15%; }
+    #c-mainGridSection .learnMoreWrapper p {
+      padding: 0;
+      margin: 0; }
+    #c-mainGridSection .learnMoreWrapper div {
+      padding: 0 9%;
+      margin: 0;
+      border-radius: 20%;
+      position: absolute;
+      top: 58%;
+      width: 100%;
+      height: 61%;
+      left: -9%; }
+  #c-mainGridSection #c-transformSection-div__TextWrapper {
+    margin: 15% 8%; }
+  #c-mainGridSection #c-transformSection-div__LearMoreRectangle {
+    background-color: rgba(250, 212, 0, 0.2); }
 
 /*# sourceMappingURL=style.css.map */
