@@ -1,0 +1,12 @@
+﻿#c-testimonialsSectionGrid{
+  display:grid;
+  grid-template-columns: auto;
+}
+
+.testimonialsItem{
+  margin: 5% 4%;
+  
+  img{
+    width:30%;
+  }
+}

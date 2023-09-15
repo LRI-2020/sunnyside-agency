@@ -387,14 +387,29 @@ header {
     .colorSection .greenText {
       font-size: 1vw; } }
 
-.testimonials .title {
-  color: #A7AAAD; }
-.testimonials .name {
+.testimonials #c-testimonialsSection-Title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #A7AAAD;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  letter-spacing: 1vw; }
+.testimonials .testimonialsName__Text {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 5vw;
   color: #24303E; }
-.testimonials .job {
+.testimonials .testimonialsJob__Text {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 5vw;
   color: #A7AAAD; }
-.testimonials .text {
-  color: #5B636D; }
+.testimonials .testimonialsText {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #5B636D;
+  font-size: 5vw;
+  line-height: 2; }
 
 footer a {
   color: #458D7E; }
@@ -596,5 +611,13 @@ header {
       background-image: url("../img/mandarineDesktop.png"); }
     #c-mainGridSection #c-graphicSection {
       background-image: url("../img/CherryDesktop.png"); } }
+#c-testimonialsSectionGrid {
+  display: grid;
+  grid-template-columns: auto; }
+
+.testimonialsItem {
+  margin: 5% 4%; }
+  .testimonialsItem img {
+    width: 30%; }
 
 /*# sourceMappingURL=style.css.map */

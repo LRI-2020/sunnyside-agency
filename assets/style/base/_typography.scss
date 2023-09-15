@@ -129,20 +129,37 @@ header {
 
 .testimonials {
 
-  .title {
+  #c-testimonialsSection-Title {
+    font-family: $title-font;
+    font-weight: 900;
     color: $color-title-testimonial;
+    font-size:4.5vw;
+    text-transform: uppercase;
+    letter-spacing:1vw;
   }
 
-  .name {
+  
+
+  .testimonialsName__Text {
+    font-family: $title-font;
+    font-weight:900;
+    font-size:5vw;
     color: $color-name-testimonial;
   }
 
-  .job {
+  .testimonialsJob__Text {
+    font-family: $text-font;
+    font-weight: 600;
+    font-size:5vw;
     color: $color-job-testimonial;
   }
 
-  .text {
+  .testimonialsText {
+    font-family: $text-font;
+    font-weight: 600;
     color: $color-p-testimonial;
+    font-size:5vw;
+    line-height: 2;
   }
 }
 
