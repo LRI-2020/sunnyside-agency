@@ -345,21 +345,24 @@ header {
   text-transform: uppercase;
   font-size: 0.9em; }
 
-.greenSection .greenTitle {
+.colorSection .blueTitle {
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 2em;
-  color: #24554A; }
-.greenSection p {
-  color: #24554A; }
-
-.blueSection .blueTitle {
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 2em;
+  font-size: 1.7em;
   color: #052C3B; }
-.blueSection p {
+.colorSection .blueText {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
   color: #19536C; }
+.colorSection .greenTitle {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.7em;
+  color: #24554A; }
+.colorSection .greenText {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  color: #24554A; }
 
 .testimonials .title {
   color: #A7AAAD; }
@@ -463,14 +466,14 @@ header {
   grid-template-columns: auto; }
   #c-mainGridSection img {
     width: 100%; }
-  #c-mainGridSection .learnMoreWrapper {
+  #c-mainGridSection .whiteSection .learnMoreWrapper {
     width: fit-content;
     position: relative;
     margin-top: 15%; }
-    #c-mainGridSection .learnMoreWrapper p {
+    #c-mainGridSection .whiteSection .learnMoreWrapper p {
       padding: 0;
       margin: 0; }
-    #c-mainGridSection .learnMoreWrapper div {
+    #c-mainGridSection .whiteSection .learnMoreWrapper div {
       padding: 0 9%;
       margin: 0;
       border-radius: 20%;
@@ -479,11 +482,28 @@ header {
       width: 100%;
       height: 61%;
       left: -9%; }
-  #c-mainGridSection .mainSection-div__TextWrapper {
+  #c-mainGridSection .whiteSection .whiteSection-div__TextWrapper {
     margin: 10% 8% 18% 8%; }
-  #c-mainGridSection #c-transformSection-div__LearMoreRectangle {
+  #c-mainGridSection .whiteSection #c-transformSection-div__LearMoreRectangle {
     background-color: rgba(250, 212, 0, 0.2); }
-  #c-mainGridSection #c-audienceSection-div__LearMoreRectangle {
+  #c-mainGridSection .whiteSection #c-audienceSection-div__LearMoreRectangle {
     background-color: rgba(254, 119, 102, 0.2); }
+  #c-mainGridSection .colorSection {
+    position: relative;
+    height: 37em;
+    width: 100%; }
+    #c-mainGridSection .colorSection img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1; }
+    #c-mainGridSection .colorSection .colorSection-div__TextWrapper {
+      position: absolute;
+      bottom: 8%;
+      margin: 0 6%; }
+  #c-mainGridSection #c-photoSection {
+    background-image: url("../img/mandarine.png"); }
+  #c-mainGridSection #c-graphicSection {
+    background-image: url("../img/cherry.png"); }
 
 /*# sourceMappingURL=style.css.map */

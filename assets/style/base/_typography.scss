@@ -34,17 +34,34 @@ header {
 
 //MainSections Typo
 
-
-@mixin mainSectionsTitle {
+@mixin SectionTitle{
   font-family: $title-font;
   font-weight: 900;
+}
+
+
+
+@mixin whiteSectionsTitle {
+@include SectionTitle;
   font-size: 2em;
+}
+
+@mixin colorSectionsTitle {
+  @include SectionTitle;
+  font-size: 1.7em;
+  
+}
+
+@mixin colorSectionText($color){
+  font-family: $text-font;
+  line-height: 1.5;
+  color: $color;
 }
 
 .whiteSection {
 
   .whiteTitle {
-    @include mainSectionsTitle;
+    @include whiteSectionsTitle;
     color: $color-title-grey;
 
   }
@@ -67,30 +84,26 @@ header {
 
 }
 
-.greenSection {
 
-  .greenTitle {
-    @include mainSectionsTitle;
-    color: $color-title-green;
-
-
-  }
-
-  p {
-    color: $color-p-green;
-  }
-}
-
-.blueSection {
-
+.colorSection{
+  
   .blueTitle {
-    @include mainSectionsTitle;
+    @include colorSectionsTitle;
     color: $color-title-blue;
 
   }
 
-  p {
-    color: $color-p-blue;
+  .blueText {
+    @include colorSectionText($color-p-blue);
+  }
+  .greenTitle {
+    @include colorSectionsTitle;
+    color: $color-title-green;
+
+  }
+  .greenText {
+    @include colorSectionText($color-p-green);
+
   }
 }
 
