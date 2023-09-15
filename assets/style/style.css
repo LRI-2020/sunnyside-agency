@@ -324,7 +324,7 @@ header {
   margin: 0;
   letter-spacing: .5rem;
   word-spacing: .5rem; }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 769px) {
     #c-headerSectionTitles__text {
       font-size: 3vw; } }
 
@@ -333,38 +333,59 @@ header {
   font-weight: 900;
   font-size: 8vw;
   color: #24303E; }
+  @media screen and (min-width: 769px) {
+    .whiteSection .whiteTitle {
+      font-size: 3vw; } }
 .whiteSection .whiteSectionText {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   line-height: 1.7;
   color: #808397;
   font-size: 4.5vw; }
+  @media screen and (min-width: 769px) {
+    .whiteSection .whiteSectionText {
+      font-size: 1.5vw; } }
 .whiteSection .learnMoreText {
   font-family: "Fraunces", serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 4vw; }
+  @media screen and (min-width: 769px) {
+    .whiteSection .learnMoreText {
+      font-size: 1.5vw; } }
 
 .colorSection .blueTitle {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 7vw;
   color: #052C3B; }
+  @media screen and (min-width: 769px) {
+    .colorSection .blueTitle {
+      font-size: 2vw; } }
 .colorSection .blueText {
   font-family: "Barlow", sans-serif;
   line-height: 1.8;
   color: #19536C;
   font-size: 4vw; }
+  @media screen and (min-width: 769px) {
+    .colorSection .blueText {
+      font-size: 1vw; } }
 .colorSection .greenTitle {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 7vw;
   color: #24554A; }
+  @media screen and (min-width: 769px) {
+    .colorSection .greenTitle {
+      font-size: 2vw; } }
 .colorSection .greenText {
   font-family: "Barlow", sans-serif;
   line-height: 1.8;
   color: #24554A;
   font-size: 4vw; }
+  @media screen and (min-width: 769px) {
+    .colorSection .greenText {
+      font-size: 1vw; } }
 
 .testimonials .title {
   color: #A7AAAD; }
@@ -378,11 +399,11 @@ header {
 footer a {
   color: #458D7E; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 769px) {
   .hiddenDesktop {
     display: none; } }
 
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 769px) {
   .hiddenMobile {
     display: none; } }
 
@@ -412,7 +433,7 @@ nav {
     nav #c-nav-wrap-img #c-nav__menuIcon {
       right: 1%; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 769px) {
   nav {
     margin-bottom: 3%; }
 
@@ -454,7 +475,7 @@ header {
       left: 45%;
       height: 31vw; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 769px) {
   header {
     background-image: url("../img/orangeDesktop.png");
     padding-bottom: 18%; }
@@ -509,5 +530,71 @@ header {
     background-image: url("../img/mandarine.png"); }
   #c-mainGridSection #c-graphicSection {
     background-image: url("../img/cherry.png"); }
+
+@media screen and (min-width: 769px) {
+  #c-mainGridSection {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto; }
+    #c-mainGridSection .imgSection {
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: auto;
+      background-position: center; }
+    #c-mainGridSection #c-eggSection {
+      background-image: url("../img/eggUnsplash.jpg"); }
+    #c-mainGridSection #c-glassSection {
+      background-image: url("../img/Glass.png"); }
+    #c-mainGridSection #c-eggSection {
+      grid-column: 2;
+      grid-row: 1; }
+    #c-mainGridSection #c-transformSection {
+      grid-column: 1;
+      grid-row: 1; }
+    #c-mainGridSection img {
+      width: 100%; }
+    #c-mainGridSection .whiteSection .learnMoreWrapper {
+      width: fit-content;
+      position: relative;
+      margin: 0; }
+      #c-mainGridSection .whiteSection .learnMoreWrapper p {
+        padding: 0;
+        margin: 0; }
+      #c-mainGridSection .whiteSection .learnMoreWrapper div {
+        padding: 0 9%;
+        margin: 0;
+        border-radius: 20%;
+        position: absolute;
+        top: 58%;
+        width: 100%;
+        height: 61%;
+        left: -9%; }
+    #c-mainGridSection .whiteSection .whiteSection-div__TextWrapper {
+      margin: 16% 17%;
+      text-align: start; }
+    #c-mainGridSection .whiteSection #c-transformSection-div__LearMoreRectangle {
+      background-color: rgba(250, 212, 0, 0.2); }
+    #c-mainGridSection .whiteSection #c-audienceSection-div__LearMoreRectangle {
+      background-color: rgba(254, 119, 102, 0.2); }
+    #c-mainGridSection .colorSection {
+      background-repeat: no-repeat;
+      position: relative;
+      height: 43vw;
+      width: 100%;
+      background-size: cover;
+      background-position: center; }
+      #c-mainGridSection .colorSection img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1; }
+      #c-mainGridSection .colorSection .colorSection-div__TextWrapper {
+        position: absolute;
+        bottom: 8%;
+        margin: 0 25%; }
+    #c-mainGridSection #c-photoSection {
+      background-image: url("../img/mandarineDesktop.png"); }
+    #c-mainGridSection #c-graphicSection {
+      background-image: url("../img/CherryDesktop.png"); } }
 
 /*# sourceMappingURL=style.css.map */
