@@ -331,38 +331,40 @@ header {
 .whiteSection .whiteTitle {
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 8vw;
   color: #24303E; }
 .whiteSection .whiteSectionText {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   line-height: 1.7;
   color: #808397;
-  font-size: 1.1em; }
+  font-size: 4.5vw; }
 .whiteSection .learnMoreText {
   font-family: "Fraunces", serif;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 0.9em; }
+  font-size: 4vw; }
 
 .colorSection .blueTitle {
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 1.7em;
+  font-size: 7vw;
   color: #052C3B; }
 .colorSection .blueText {
   font-family: "Barlow", sans-serif;
-  line-height: 1.5;
-  color: #19536C; }
+  line-height: 1.8;
+  color: #19536C;
+  font-size: 4vw; }
 .colorSection .greenTitle {
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 1.7em;
+  font-size: 7vw;
   color: #24554A; }
 .colorSection .greenText {
   font-family: "Barlow", sans-serif;
-  line-height: 1.5;
-  color: #24554A; }
+  line-height: 1.8;
+  color: #24554A;
+  font-size: 4vw; }
 
 .testimonials .title {
   color: #A7AAAD; }
@@ -483,15 +485,17 @@ header {
       height: 61%;
       left: -9%; }
   #c-mainGridSection .whiteSection .whiteSection-div__TextWrapper {
-    margin: 10% 8% 18% 8%; }
+    margin: 17% 9% 16% 9%; }
   #c-mainGridSection .whiteSection #c-transformSection-div__LearMoreRectangle {
     background-color: rgba(250, 212, 0, 0.2); }
   #c-mainGridSection .whiteSection #c-audienceSection-div__LearMoreRectangle {
     background-color: rgba(254, 119, 102, 0.2); }
   #c-mainGridSection .colorSection {
+    background-repeat: no-repeat;
     position: relative;
-    height: 37em;
-    width: 100%; }
+    height: 160vw;
+    width: 100%;
+    background-size: cover; }
     #c-mainGridSection .colorSection img {
       position: absolute;
       top: 0;

@@ -29,7 +29,7 @@ display:grid;
     }
 
     .whiteSection-div__TextWrapper{
-      margin: 10% 8% 18% 8%;
+      margin: 17% 9% 16% 9%;
     }
 
     #c-transformSection-div__LearMoreRectangle{
@@ -43,10 +43,11 @@ display:grid;
   }
   
   .colorSection{
+    background-repeat: no-repeat;
     position:relative;
-    height: 37em;
+    height: 160vw;
     width:100%;
-    
+    background-size: cover;
     img{
       position:absolute;
       top:0;

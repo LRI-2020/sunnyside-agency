@@ -37,25 +37,29 @@ header {
 @mixin SectionTitle{
   font-family: $title-font;
   font-weight: 900;
+
 }
 
 
 
 @mixin whiteSectionsTitle {
 @include SectionTitle;
-  font-size: 2em;
+  font-size: 8vw;
+
 }
 
 @mixin colorSectionsTitle {
   @include SectionTitle;
-  font-size: 1.7em;
-  
+  font-size: 7vw;
+
+
 }
 
 @mixin colorSectionText($color){
   font-family: $text-font;
-  line-height: 1.5;
+  line-height: 1.8;
   color: $color;
+  font-size:4vw;
 }
 
 .whiteSection {
@@ -71,14 +75,14 @@ header {
     font-weight: 600;
     line-height: 1.7;
     color: $color-p-grey;
-    font-size: 1.1em;
+    font-size: 4.5vw;
   }
 
   .learnMoreText {
     font-family: $title-font;
     font-weight: 900;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 4vw;
   
   }
 
