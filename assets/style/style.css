@@ -652,9 +652,24 @@ header {
     text-align: center;
     row-gap: 10%; }
     .testimonialsItem .testimonialsPhotos {
-      width: 30%;
       margin: 0 35%; }
+    .testimonialsItem #testimonialsPhotosThomas {
+      width: 30%; }
     .testimonialsItem #testimonialsPhotosJennie {
-      width: 28%; } }
+      width: 28%; }
+    .testimonialsItem #testimonialsPhotosEmily {
+      width: 31%; } }
+#c-designSectionGrid {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  #c-designSectionGrid img {
+    width: 100%; }
+
+@media screen and (min-width: 769px) {
+  #c-designSectionGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%); }
+    #c-designSectionGrid img {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+﻿#c-designSectionGrid{
+  
+  display:grid;
+  grid-template-columns: 50% 50%;
+  
+  img{
+    width:100%;
+  }
+}
+
+@media screen and (min-width:769px){
+  #c-designSectionGrid{
+
+    display:grid;
+    grid-template-columns: repeat(4,25%);
+
+    img{
+      width:100%;
+    }
+  }
+}
