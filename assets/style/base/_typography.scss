@@ -186,6 +186,14 @@ header {
 footer {
   a {
     color: $color-footer-link;
+    font-family: $text-font;
+    font-weight: 600;
+    font-size:18px;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color:$color-white;
   }
 }
 

@@ -1,0 +1,69 @@
+﻿footer {
+  background-color: $color-footer-background;
+display:flex;
+  height:350px;
+box-sizing: border-box;
+  
+  #c-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 2fr 3fr 3fr 1fr;
+    gap: 0;
+    justify-items: center;
+    align-items: center;
+    height:206px;
+    width:297px;
+    box-sizing:border-box;
+  }
+
+  #c-footer-grid-item-logoWrapper__sunnyside {
+    grid-column: 3/11;
+    grid-row: 1;
+  }
+
+  .linkItem {
+    grid-row: 2;
+    margin-top:15%;
+  }
+
+  #c-footer-grid-item-linkWrapper__About {
+    grid-column: 1/5;
+  }
+
+  #c-footer-grid-item-linkWrapper__Services {
+    grid-column: 5/9;
+  }
+
+  #c-footer-grid-item-linkWrapper__Projects{
+    grid-column: 9/13;
+  }
+
+  .iconItem {
+    grid-row: 4;
+    margin-top: 2%;
+    display: flex;
+    
+  }
+  .iconItem:hover {
+    filter:brightness(0) invert(1);
+
+  }
+  
+
+  #c-footer-grid-item-iconWrapper__fb{
+    grid-column: 3/5;
+  }
+
+  #c-footer-grid-item-iconWrapper__insta{
+    grid-column: 5/7;
+  }
+
+  #c-footer-grid-item-iconWrapper__twt{
+    grid-column: 7/9;
+  }
+
+  #c-footer-grid-item-iconWrapper__pint{
+    grid-column: 9/11;
+  }
+
+}
