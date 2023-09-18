@@ -544,8 +544,14 @@ header {
     margin: 17% 9% 16% 9%; }
   #c-mainGridSection .whiteSection #c-transformSection-div__LearMoreRectangle {
     background-color: rgba(250, 212, 0, 0.2); }
+  #c-mainGridSection .whiteSection #c-transformSection-div__LearnMoreWrapper:hover #c-transformSection-div__LearMoreRectangle {
+    background-color: #fad400;
+    z-index: -1; }
   #c-mainGridSection .whiteSection #c-audienceSection-div__LearMoreRectangle {
     background-color: rgba(254, 119, 102, 0.2); }
+  #c-mainGridSection .whiteSection #c-audienceSection-div__LearnMoreWrapper:hover #c-audienceSection-div__LearMoreRectangle {
+    background-color: #fe7766;
+    z-index: -1; }
   #c-mainGridSection .colorSection {
     background-repeat: no-repeat;
     position: relative;

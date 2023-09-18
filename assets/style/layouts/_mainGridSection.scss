@@ -29,6 +29,10 @@
         height: 61%;
         left: -9%;
       }
+
+      .learnMoreWrapper:hover{
+        
+      }
     }
 
     .whiteSection-div__TextWrapper {
@@ -39,9 +43,26 @@
       background-color: rgba(250, 212, 0, 0.2);
     }
 
+    #c-transformSection-div__LearnMoreWrapper:hover{
+      #c-transformSection-div__LearMoreRectangle {
+        background-color: rgba(250, 212, 0,1);
+        z-index:-1;
+      }
+    }
+
     #c-audienceSection-div__LearMoreRectangle {
       background-color: rgba(254, 119, 102, 0.2);
     }
+
+    #c-audienceSection-div__LearnMoreWrapper:hover{
+      #c-audienceSection-div__LearMoreRectangle {
+        background-color: rgba(254, 119, 102, 1);
+        z-index:-1;
+
+      }
+    }
+    
+    
 
   }
 
