@@ -7,6 +7,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Open+Sans:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Open+Sans:wght@700;800&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -489,13 +490,8 @@ nav {
       border-radius: 15%;
       padding: 0.5rem 1rem; }
     ul #c-nav-ul-li-a__contact:hover {
-      text-transform: uppercase;
       color: #FFFFFF;
-      font-family: "Fraunces", serif;
-      font-weight: 700;
-      background-color: rgba(255, 255, 255, 0.3);
-      border-radius: 15%;
-      padding: 0.5rem 1rem; } }
+      background-color: rgba(255, 255, 255, 0.3); } }
 header {
   background-image: url("../img/orangeMobile.png");
   background-size: cover;
@@ -574,7 +570,6 @@ header {
 
 @media screen and (min-width: 769px) {
   #c-mainGridSection {
-    display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto; }
     #c-mainGridSection .imgSection {
@@ -592,46 +587,13 @@ header {
     #c-mainGridSection #c-transformSection {
       grid-column: 1;
       grid-row: 1; }
-    #c-mainGridSection img {
-      width: 100%; }
-    #c-mainGridSection .whiteSection .learnMoreWrapper {
-      width: fit-content;
-      position: relative;
-      margin: 0; }
-      #c-mainGridSection .whiteSection .learnMoreWrapper p {
-        padding: 0;
-        margin: 0; }
-      #c-mainGridSection .whiteSection .learnMoreWrapper div {
-        padding: 0 9%;
-        margin: 0;
-        border-radius: 20%;
-        position: absolute;
-        top: 58%;
-        width: 100%;
-        height: 61%;
-        left: -9%; }
     #c-mainGridSection .whiteSection .whiteSection-div__TextWrapper {
       margin: 16% 17%;
       text-align: start; }
-    #c-mainGridSection .whiteSection #c-transformSection-div__LearMoreRectangle {
-      background-color: rgba(250, 212, 0, 0.2); }
-    #c-mainGridSection .whiteSection #c-audienceSection-div__LearMoreRectangle {
-      background-color: rgba(254, 119, 102, 0.2); }
     #c-mainGridSection .colorSection {
-      background-repeat: no-repeat;
-      position: relative;
       height: 43vw;
-      width: 100%;
-      background-size: cover;
       background-position: center; }
-      #c-mainGridSection .colorSection img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1; }
       #c-mainGridSection .colorSection .colorSection-div__TextWrapper {
-        position: absolute;
-        bottom: 8%;
         margin: 0 25%; }
     #c-mainGridSection #c-photoSection {
       background-image: url("../img/mandarineDesktop.png"); }
@@ -676,15 +638,12 @@ header {
 #c-designSectionGrid {
   display: grid;
   grid-template-columns: 50% 50%; }
+  @media screen and (min-width: 769px) {
+    #c-designSectionGrid {
+      grid-template-columns: repeat(4, 25%); } }
   #c-designSectionGrid img {
     width: 100%; }
 
-@media screen and (min-width: 769px) {
-  #c-designSectionGrid {
-    display: grid;
-    grid-template-columns: repeat(4, 25%); }
-    #c-designSectionGrid img {
-      width: 100%; } }
 footer {
   background-color: #90D4C6;
   display: flex;

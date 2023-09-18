@@ -1,69 +1,66 @@
-﻿nav {
-  position:relative;
-padding: 5%;
-  margin-bottom:15%;
-  height:5%;
+﻿@import "../abstracts/_variables";
+
+nav {
+  position: relative;
+  padding: 5%;
+  margin-bottom: 15%;
+  height: 5%;
+
   #c-nav-wrap-img {
-    position:relative;
-    height:100%;
+    position: relative;
+    height: 100%;
+
     img {
       position: absolute;
     }
-    
-    #c-nav__logo{
-      left:1%;
-    }    
-    
-    #c-nav__menuIcon{
-      right:1%;
+
+    #c-nav__logo {
+      left: 1%;
+    }
+
+    #c-nav__menuIcon {
+      right: 1%;
     }
   }
 
 
 }
 
+//nav on desktop
 @media screen and (min-width: 769px) {
 
   nav {
-    margin-bottom:3%;
-    
+    margin-bottom: 3%;
   }
+  
+  //horizontal menu on desktop
 
   ul {
-    position:absolute;
+    position: absolute;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    right:5%;
-    
-    li{
-      display: inline;
+    right: 5%;
 
+    li {
+      display: inline;
     }
-    
-    #c-nav-ul-li-a__contact{
+
+    #c-nav-ul-li-a__contact {
       text-transform: uppercase;
-      color:$color-title-grey;
-      font-family: "Fraunces", serif;
+      color: $color-title-grey;
+      font-family: $title-font;
       font-weight: 700;
       background-color: $color-white;
-      border-radius:15%;
+      border-radius: 15%;
       padding: 0.5rem 1rem;
- 
+
     }
 
-    #c-nav-ul-li-a__contact:hover{
-
-      text-transform: uppercase;
-      color:$color-white;
-      font-family: "Fraunces", serif;
-      font-weight: 700;
-      background-color: rgba(255,255,255, 0.3);
-      border-radius:15%;
-      padding: 0.5rem 1rem;
-
-
+    #c-nav-ul-li-a__contact:hover {
+      color: $color-white;
+      background-color: rgba(255, 255, 255, 0.3);
     }
   }
-  
+
 }
