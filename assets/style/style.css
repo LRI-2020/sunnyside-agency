@@ -364,6 +364,7 @@ header {
       font-size: 2vw; } }
 .colorSection .blueText {
   font-family: "Barlow", sans-serif;
+  font-weight: 600;
   line-height: 1.8;
   color: #19536C;
   font-size: 4vw; }
@@ -380,6 +381,7 @@ header {
       font-size: 2vw; } }
 .colorSection .greenText {
   font-family: "Barlow", sans-serif;
+  font-weight: 600;
   line-height: 1.8;
   color: #24554A;
   font-size: 4vw; }
@@ -424,9 +426,9 @@ header {
       font-size: 1vw; } }
 
 footer a {
-  color: #458D7E;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
+  color: #458D7E;
   font-size: 18px;
   text-decoration: none; }
 footer a:hover {

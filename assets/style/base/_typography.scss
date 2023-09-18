@@ -1,9 +1,17 @@
 ﻿@import "../abstracts/__abstracts-dir";
 
-
-h1, h2, h3, h4, h5, h6 {
+@mixin titleTypo {
   font-family: $title-font;
   font-weight: 900;
+}
+
+@mixin textTypo {
+  font-family: $text-font;
+  font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include titleTypo;
 }
 
 // Header Typo
@@ -19,10 +27,11 @@ header {
 }
 
 #c-headerSectionTitles__text {
-  font-family: $title-font;
-  font-weight: 900;
+  @include titleTypo;
+
   color: $color-white;
   font-size: 11vw;
+
   @media screen and (min-width: 769px) {
     font-size: 3vw;
   }
@@ -34,39 +43,32 @@ header {
 
 //MainSections Typo
 
-@mixin SectionTitle{
-  font-family: $title-font;
-  font-weight: 900;
-
-}
-
-
-
 @mixin whiteSectionsTitle {
-@include SectionTitle;
+
+  @include titleTypo;
   font-size: 8vw;
-  @media screen and (min-width:769px){
-    font-size:3vw;
+  @media screen and (min-width: 769px) {
+    font-size: 3vw;
   }
 
 }
 
 @mixin colorSectionsTitle {
-  @include SectionTitle;
+  @include titleTypo;
   font-size: 7vw;
-  @media screen and (min-width:769px){
-    font-size:2vw;
+  @media screen and (min-width: 769px) {
+    font-size: 2vw;
   }
 
 }
 
-@mixin colorSectionText($color){
-  font-family: $text-font;
+@mixin colorSectionText($color) {
+  @include textTypo;
   line-height: 1.8;
   color: $color;
-  font-size:4vw;
-  @media screen and (min-width:769px){
-    font-size:1vw;
+  font-size: 4vw;
+  @media screen and (min-width: 769px) {
+    font-size: 1vw;
   }
 }
 
@@ -79,32 +81,29 @@ header {
   }
 
   .whiteSectionText {
-    font-family: $text-font;
-    font-weight: 600;
+    @include textTypo;
     line-height: 1.7;
     color: $color-p-grey;
     font-size: 4.5vw;
-    @media screen and (min-width:769px){
-      font-size:1.5vw;
+    @media screen and (min-width: 769px) {
+      font-size: 1.5vw;
     }
   }
 
   .learnMoreText {
-    font-family: $title-font;
-    font-weight: 900;
+    @include titleTypo;
     text-transform: uppercase;
     font-size: 4vw;
-    @media screen and (min-width:769px){
-      font-size:1.5vw;
+    @media screen and (min-width: 769px) {
+      font-size: 1.5vw;
     }
-  
+
   }
 
 }
 
+.colorSection {
 
-.colorSection{
-  
   .blueTitle {
     @include colorSectionsTitle;
     color: $color-title-blue;
@@ -114,11 +113,13 @@ header {
   .blueText {
     @include colorSectionText($color-p-blue);
   }
+
   .greenTitle {
     @include colorSectionsTitle;
     color: $color-title-green;
 
   }
+
   .greenText {
     @include colorSectionText($color-p-green);
 
@@ -130,52 +131,44 @@ header {
 .testimonials {
 
   #c-testimonialsSection-Title {
-    font-family: $title-font;
-    font-weight: 900;
+    @include titleTypo;
     color: $color-title-testimonial;
-    font-size:4.5vw;
+    font-size: 4.5vw;
     text-transform: uppercase;
-    letter-spacing:1vw;
-    @media screen and (min-width: 769px){
-      font-size:1.5vw;
-
+    letter-spacing: 1vw;
+    @media screen and (min-width: 769px) {
+      font-size: 1.5vw;
     }
-    
-    
   }
 
-  
 
   .testimonialsName__Text {
-    font-family: $title-font;
-    font-weight:900;
-    font-size:5vw;
+    @include titleTypo;
+    font-size: 5vw;
     color: $color-name-testimonial;
-    @media screen and (min-width: 769px){
-      font-size:1vw;
+    @media screen and (min-width: 769px) {
+      font-size: 1vw;
 
     }
   }
 
   .testimonialsJob__Text {
-    font-family: $text-font;
-    font-weight: 600;
-    font-size:5vw;
+    @include textTypo;
+    font-size: 5vw;
     color: $color-job-testimonial;
-    @media screen and (min-width: 769px){
-      font-size:1vw;
+    @media screen and (min-width: 769px) {
+      font-size: 1vw;
 
     }
   }
 
   .testimonialsText {
-    font-family: $text-font;
-    font-weight: 600;
+    @include textTypo;
     color: $color-p-testimonial;
-    font-size:5vw;
+    font-size: 5vw;
     line-height: 2;
-    @media screen and (min-width: 769px){
-      font-size:1vw;
+    @media screen and (min-width: 769px) {
+      font-size: 1vw;
 
     }
   }
@@ -185,15 +178,14 @@ header {
 
 footer {
   a {
+    @include textTypo;
     color: $color-footer-link;
-    font-family: $text-font;
-    font-weight: 600;
-    font-size:18px;
+    font-size: 18px;
     text-decoration: none;
   }
-  
-  a:hover{
-    color:$color-white;
+
+  a:hover {
+    color: $color-white;
   }
 }
 
